@@ -1,0 +1,318 @@
+h1 {
+    font-weight: normal;
+}
+
+.reactietoevoegen {
+    float: right;
+    margin-top: -10px;
+}
+
+.reacties {
+    margin: 10px 20px;
+}
+
+.tekstreacties {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.tekstreacties2 {
+    color: grey;
+    font-size: 11px;
+}
+
+.fotoreacties {
+    float: left;
+    padding-right: 5px;
+    vertical-align: top;
+}
+
+.reactielijn {
+    border-color: #9d1981;
+    border-width: thin;
+}
+
+.footerplaatje {
+    margin: 0;
+    width: 100%;
+}
+
+.footertekst {
+    color: #d2d2d2;
+    margin-left: 10px;
+    margin-top: -25px;
+    position: absolute;
+    text-align: center;
+
+}
+
+@media (max-width: 500px) {
+
+    body {
+        font-family: Helvetica Neue;
+        padding: 5px;
+    }
+
+    .mobiel {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        visibility: visible;
+    }
+
+    .tablet {
+        display: none;
+        visibility: hidden;
+    }
+
+    .laptop {
+        display: none;
+        visibility: hidden;
+    }
+
+    .mobieltitel {
+        font-size: 9pt;
+        font-weight: normal;
+    }
+
+    .mobielnav {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    .mobielhartje {
+        float: right;
+        margin-top: 5px;
+    }
+
+    .dropdownlist {
+        background-color: white;
+        border: solid;
+        border-color: purple;
+        border-width: thin;
+    }
+
+    .mobielreactietoevoegen {
+        float: right;
+        margin-top: -10px;
+    }
+
+
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+
+    body {
+        font-family: Helvetica Neue;
+        padding: 5px;
+    }
+
+    .tablet {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+        visibility: visible;
+    }
+
+    .mobiel {
+        display: none;
+        visibility: hidden;
+    }
+
+    .laptop {
+        display: none;
+        visibility: hidden;
+    }
+
+    .headertablet {
+        grid-column: 1/3;
+    }
+
+    .tabletnav {
+        align-items: center;
+        display: flex;
+        grid-column: 1/3;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 10px;
+
+    }
+
+    .tablettitel {
+        grid-column: 1/3;
+        font-size: 10pt;
+        font-weight: normal;
+
+    }
+
+    .tablethartje {
+        float: right;
+    }
+
+    .tabletverhaal {
+        grid-column: 1/3;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tabletsorteren {
+        grid-column: 1/3;
+    }
+
+    .dropdownlist {
+        background-color: white;
+        border: solid;
+        border-color: purple;
+        border-width: thin;
+    }
+
+    .tabletreactietoevoegen {
+        float: right;
+        margin-top: -10px;
+    }
+
+    .tabletfooter {
+        grid-column: 1/3;
+    }
+
+}
+
+@media (min-width: 900px) {
+
+    body {
+        border-color: purple;
+        border-left: solid;
+        border-right: solid;
+        border-top: solid;
+        border-width: thick;
+        font-family: Helvetica Neue;
+        margin: 0;
+        padding: 5px;
+
+    }
+
+    .laptop {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        padding: 10px;
+        visibility: visible;
+    }
+
+    .mobiel {
+        display: none;
+        visibility: hidden;
+    }
+
+    .tablet {
+        display: none;
+        visibility: hidden;
+    }
+
+    .headerlaptop {
+        grid-column: 1/4;
+    }
+
+    .laptopnav {
+        grid-column: 1/4;
+
+    }
+
+    .laptopnav2 {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .laptopnavmenuicon {
+        visibility: hidden;
+    }
+
+    .laptopnavlijn {
+        border: 1px solid grey thin;
+        margin: -15px 0 20px 0;
+
+    }
+
+
+    .laptopfilter {
+
+        border: solid;
+        border-color: #d2d2d2;
+        border-width: thin;
+        grid-row: 2/5;
+        margin: -1px;
+        padding: 10px 0 0 2%;
+        position: relative;
+    }
+}
+
+.laptopfilter2 {
+    grid-column: 2/4;
+    padding-left: 15px;
+}
+
+
+ul {
+
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+    list-style-type: none;
+    letter-spacing: 0.5px;
+    margin: 30px 0;
+    padding: 0;
+
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: #9d1981;
+}
+
+.laptoptitel {
+    grid-column: 1/4;
+    font-size: 11pt;
+    font-weight: normal;
+
+}
+
+.laptophartje {
+    float: right;
+    margin-top: -5px;
+}
+
+.laptopverhaal {
+    grid-column: 1/4;
+}
+
+.laptopsorteren {
+    grid-column: 1/4;
+}
+
+.dropdownlist {
+    background-color: white;
+    border: solid;
+    border-color: purple;
+    border-width: thin;
+}
+
+.laptopfooter {
+    grid-column: 1/4;
+}
+}
